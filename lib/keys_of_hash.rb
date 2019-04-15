@@ -1,16 +1,13 @@
 class Hash
-  def keys_of(*arguments)
-    # code goes here
+  def keys_of(arguments)
     array = []
-
-    self.each do |k, v| #self will return the hash that the method is being used on
-      arguments.each do |value| #loop through arguments
-        if value == v
-          array << k
-        end #end if
-      end #end arguments hash
-    end #end self hash
-
+    self.each do |first, second| 
+      arguments.each do |value| 
+        if value == first
+          array << second
+        end 
+      end 
+    end 
     array
   end
 end
