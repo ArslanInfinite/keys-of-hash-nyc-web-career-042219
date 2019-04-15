@@ -1,7 +1,7 @@
 require 'pry'
 
 class Hash
-  def keys_of(arguments)
+  def keys_of(*arguments)
     array = []
     self.each do |first, second|
       arguments.each do |value|
@@ -13,5 +13,3 @@ class Hash
     array
   end
 end
-
-keys_of(arguments)
