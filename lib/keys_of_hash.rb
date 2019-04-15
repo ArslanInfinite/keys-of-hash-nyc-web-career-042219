@@ -13,3 +13,5 @@ class Hash
     array
   end
 end
+
+keys_of(arguments)
